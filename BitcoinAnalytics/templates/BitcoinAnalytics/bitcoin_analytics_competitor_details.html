@@ -1,0 +1,28 @@
+{% extends "bitcoin_analytics_base.html" %}
+
+{% block title %}Competitor Details{% endblock %}
+{% block content %}
+    <div class="Container">
+        <h4>See individual competitor details.</h4>
+
+        <table class="table table-responsive" id="competition-table">
+            <tr id="headerRow">
+                <th>Name</th>
+                <th>Price Prediction</th>
+                <th>LinkedIn Profile</th>
+                <th>Options</th>
+            </tr>
+            {% for key in competitionRow %}
+            <tr>
+                <td class="center">{{ key.name | capfirst }}</td>
+                <td class="center">{{ key.price }}</td>
+                <td class="center">{{ key.linkedIn }}</td>
+                <td class="center">
+                    <button type="submit" name="name"><a href="{% url 'edit_competitor' key.pk %}">Edit</a></button>
+                    <button type="submit" name="name"><a href="{% url 'delete_competitor' key.pk %}">Delete</a></button>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

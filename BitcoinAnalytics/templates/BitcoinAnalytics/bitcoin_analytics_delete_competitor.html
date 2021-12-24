@@ -1,0 +1,17 @@
+{% extends "bitcoin_analytics_base.html" %}
+
+{% block title %}Delete Competitor Confirmation{% endblock %}
+{% block content %}
+    <div class="Container">
+        <h4>Delete Confirmation</h4>
+
+        <form method="POST">
+            {% csrf_token %}
+            <p>Are you sure you want to delete "{{ competitionRow.name }}"?</p>
+            <input type = "submit" value="Confirm">
+        </form>
+
+
+    </div>
+
+{% endblock %}

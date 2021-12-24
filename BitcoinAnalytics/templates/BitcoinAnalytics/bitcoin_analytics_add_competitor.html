@@ -1,0 +1,16 @@
+{% extends 'bitcoin_analytics_base.html' %}
+
+{% block title %}Join Competition{% endblock %}
+{% block content %}
+    <div class="TextCenter">
+        <h3>Join our Quarterly Competition</h3>
+    </div>
+    <div class="Container">
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button id="new-competitor-button" type="submit" name="Save_Competitor">Submit Entry</button>
+        </form>
+        <br>
+    </div>
+{% endblock %}

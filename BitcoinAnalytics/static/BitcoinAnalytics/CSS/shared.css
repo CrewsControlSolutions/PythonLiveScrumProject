@@ -1,0 +1,208 @@
+html, body {
+    height: cover;
+    width: cover;
+}
+
+body {
+	font-family: Lucida Sans Unicode;
+	text-align: left;
+	background-image: url("../../../static/BitcoinAnalytics/images/background.jpg");
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	overflow: scroll;
+	background-repeat: no-repeat;
+	background-color: black;
+}
+
+h1 {
+	color: black;
+	font-size: 36px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+/*Container Styling */
+.intro-container{
+	opacity: 0.90;
+/*	position: relative;*/
+	width: auto;
+	height: auto;
+	border-radius: 8px;
+	border: 2px solid gray;
+	box-shadow: 4px 3px darkslateblue;
+	margin-left: auto;
+	margin-right: auto;
+/*	margin-top: 85px;*/
+	background-color: lightsteelblue;
+}
+
+
+.Wrap {
+/*    height: 100%;
+    width: 100%;*/
+/*    position: absolute;
+    *//* This ensures that the images cannot render outside of their container without forcing any scrollbars*//*
+    overflow: hidden;
+    top: 0;
+    left: 0;*/
+    text-align: center;
+/*    background-color: green;*/
+}
+
+.MenuContainer {
+    max-height: 340px;
+    margin: 0% auto;
+/*    content: " ";*/
+    /* top: 0%;
+    left: 0;
+    position: absolute; /* to the top edge of the screen */
+    width: 100%;
+/*    position: fixed;*/
+/*    z-index: 100;*/
+    /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+#Home {
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 10px; /* This is the spacer before the main title logo */
+    padding-bottom: 10px; /* This is the spacer after the main title logo */
+    color: black;
+}
+
+.Container {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.TextCenter {
+    text-align: center;
+}
+
+.HeadMain {
+    text-shadow: 2px 4px 5px rgba(0,0,0,0.9);
+    font-variant: small-caps;
+    color: red;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 4.5em;
+    text-align: left;
+    font-family: impact, sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    border: 5px double #fff;
+    padding: 10px;
+}
+
+/* General Table Styling */
+th{
+	border: 3px solid black;
+}
+
+tr td{
+	height: 25px;
+	border: 2px solid black;
+	word-wrap: normal;
+	vertical-align: top;
+	width: auto;
+}
+
+#headerRow {
+	color: darkslateblue;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+	width: 15%;
+}
+
+.noVisualButton {
+	background-color: transparent;
+	border: none;
+}
+
+.noVisualButton:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.left{
+	padding-left: 10px;
+	width: 30%;
+	word-wrap: normal;
+}
+
+.right {
+	padding-right: 5px;
+	width: 20%;
+	text-align: right;
+}
+
+#competition-table {
+	background-color:white;
+	width: 90%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	border: 2px solid gray;
+	border-collapse: collapse;
+	border-radius: 8px;
+	table-layout: auto;
+	float: center;
+	position: relative;
+}
+
+/* Footer styling */
+#block-footer {
+    clear: both;
+    display: flex;
+    width: 100%;
+	-moz-box-sizing: border-box;
+    margin: 0 auto;
+    background-color: darkslateblue;
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+}
+#block-footer a, #block-footer p {
+    flex: 1;
+    color: white;
+    padding: 15px 15px;
+	font-size: 14px;
+    line-height: 10px;
+	font-family:'PT Sans', Arial, Helvetica, sans-serif;
+}
+#footer-left {
+    width: 40%;
+    text-align: left;
+}
+#footer-right {
+    width: 40%;
+    text-align: right;
+}
+#block-footer{
+	float:left;
+	clear:both;
+	width:100%;
+}
+#block-footer a {
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	text-decoration: none;
+	outline: medium none;
+}
+#block-footer a:hover {
+    color: steelblue;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+

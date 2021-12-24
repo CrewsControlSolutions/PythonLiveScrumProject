@@ -1,0 +1,29 @@
+{% extends "bitcoin_analytics_base.html" %}
+
+{% block title %}Bitcoin Analytics{% endblock %}
+{% block content %}
+    <div id = "Home">
+      <div class="Container">
+        <div class="TextCenter">
+          <span class="HeadMain">Data Feather</span>
+            <h2> Introducing Data Feather, your Bitcoin analysis tool for exploring trends in price history and gaining valuable insight. Tap into a variety of computational methods and graphical displays with minimal effort. Data Feather's intuitive platform could help you make more informed decisions today. Put a feather in your data.</h2>
+        </div>
+          <h4>See individual competitor details.</h4>
+            <form method="POST">
+                <label id="index_label">Choose Single Competitor:</label>
+                {% csrf_token %}
+
+                <select name="name">
+                    <option disabled selected value>------</option>
+                    {% for entry in competitors %}
+                        <option value="{{ entry.name }}">
+                            {{ entry.name }}
+                        </option>
+                    {% endfor %}
+                </select>
+
+                <button type="submit">Go to Competitor</button>
+            </form>
+      </div>
+    </div>
+{% endblock %}

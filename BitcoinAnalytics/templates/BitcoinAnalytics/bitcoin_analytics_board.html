@@ -1,0 +1,27 @@
+{% extends "bitcoin_analytics_base.html" %}
+
+{% block title %}Competition Board{% endblock %}
+{% block content %}
+    <div class="Container">
+        <form method="POST">
+            {% csrf_token %}
+            <table class="table table-responsive" id="competition-table">
+                <tr id="headerRow">
+                    <th>Name</th>
+                    <th>Price Prediction</th>
+<!--                    <th>LinkedIn Profile</th>-->
+                </tr>
+                {% for key in competitionRow %}
+                <tr>
+                    <td class="center">
+                        <button type="submit" value="{{ key.name }}"
+                                id="{{ key.name }}" name="name" class="noVisualButton">{{ key.name | capfirst }}</button>
+                    </td>
+                    <td class="center">{{ key.price }}</td>
+<!--                    <td class="center">{{ key.linkedIn }}</td>-->
+                </tr>
+                {% endfor %}
+            </table>
+        </form>
+    </div>
+{% endblock %}

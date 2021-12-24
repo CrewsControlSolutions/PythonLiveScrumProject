@@ -1,0 +1,17 @@
+{% extends "bitcoin_analytics_base.html" %}
+
+{% block title %}Edit Competitor Details{% endblock %}
+{% block content %}
+    <div class="Container">
+        <h4>Edit individual competitor details.</h4>
+
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type = "submit" value="Update">
+        </form>
+
+
+    </div>
+
+{% endblock %}
